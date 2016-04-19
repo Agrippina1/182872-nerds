@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="index-logo">
+        <a href="#">
+          <img src="img/index-logo.png" width="100" height="50" alt="nёrds">
+        </a>
+      </div>
+      <nav class="main-navigation">
+        <ul>
+          <li>
+            <a href="#">студия</a>
+          </li>
+          <li>
+            <a href="#">клиенты</a>
+          </li>
+          <li>
+            <a href="#">магазин</a>
+          </li>
+          <li>
+            <a href="#">контакты</a>
+          </li>
+        </ul>
+      </nav>
+        <button class="basket">корзина</button>
+          <h1>добро пожаловать в магазин готовых макетов</h1>
+    </header>
+    <main class="container">
+      <div class="range-filter">
+        <h3>стоимость:</h3>
+        <div class="range-controls">
+          <div class="scale"></div>
+          <div class="toggle min-toggle"></div>
+          <div class="toggle max-toggle"></div>
+        </div>
+        <div class="price-controls">
+          от <input class="min-price" type="text" value="0">
+          до <input class="max-price" type="text" value="15000">
+        </div>
+      </div>
+      <section class="filter">
+        <h3>сетка:</h3>
+        <form action="https://echo" method="post">
+          <label>
+            <input id="adaptive-field" type="radio" name="adaptive" value="адаптивная" checked>адаптивная
+          </label>
+          <label>
+            <input id="fixed-field" type="radio" name="fixed" value="фиксированная">фиксированная
+          </label>
+          <label>
+            <input id="rubber-field" type="radio" name="rubber" value="резиновая">резиновая
+          </label>
+          <h3>особенности:</h3>
+          <ul class="features">
+            <li>
+              <input id="slider-field" type="checkbox" name="slider" checked>
+              <label for="slider-field">слайдер</label>
+            </li>
+            <li>
+              <input id="features-field" type="checkbox" name="features">
+              <label for="features-field">блок преимуществ</label>
+            </li>
+            <li>
+              <input id="news-field" type="checkbox" name="news" checked>
+              <label for="news-field">новости</label>
+            </li>
+            <li>
+              <input id="gallery-field" type="checkbox" name="gallery">
+              <label for="gallery-field">галерея</label>
+            </li>
+            <li>
+              <input id="basket-field" type="checkbox" name="basket">
+              <label for="basket-field">корзина</label>
+            </ul>
+          <a href="#" class="show">
+            <input type="submit" value="показать">
+          </a>
+        </form>
+      </section>
+      <div class="breadcrumbs">
+        <ul>
+          <li>
+            <span>сортировать:</span>
+          </li>
+          <li>
+            <a href="#">по цене</a>
+          </li>
+          <li>
+            <a href="#">по типу</a>
+          </li>
+          <li>
+            <a href="#">по функционалу</a>
+          </li>
+        </ul>
+      </div>
+      <div class="btn">
+        <button class="btn-up" type="button">вверх</button>
+        <button class="btn-down" type="button">вниз</button>
+      </div>
+      <section class="gallery">
+        <figure class="gallery-content">
+          <div class="slider-nav">
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+          </div>
+          <div class="galleery-image">
+            <img src="#" width="100" height="100" alt="">
+          </div>
+        </figure>
+        <figure class="gallery-content">
+          <div class="slider-nav">
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+          </div>
+          <div class="galleery-image">
+            <img src="#" width="100" height="100" alt="">
+          </div>
+        </figure>
+        <figure class="gallery-content">
+          <div class="slider-nav">
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+          </div>
+          <div class="galleery-image">
+            <img src="#" width="100" height="100" alt="">
+          </div>
+        </figure>
+        <figure class="gallery-content">
+          <div class="slider-nav">
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+          </div>
+          <div class="galleery-image">
+            <img src="#" width="100" height="100" alt="">
+          </div>
+        </figure>
+        <figure class="gallery-content">
+          <div class="slider-nav">
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+          </div>
+          <div class="galleery-image">
+            <img src="#" width="100" height="100" alt="">
+          </div>
+        </figure>
+        <figure class="gallery-content">
+          <div class="slider-nav">
+            <a href="#"></a>
+            <a href="#"></a>
+            <a href="#"></a>
+          </div>
+          <div class="galleery-image">
+            <img src="#" width="100" height="100" alt="">
+          </div>
+        </figure>
+      </section>
+      <div class="pagination">
+          <a href="#">1</a>
+          <a href="#">2</a>
+          <a href="#">3</a>
+          <a href="#">следующая</a>
+      </div>
+    </main>
+    <div class="map">
+      <img src="#" width="500" height="300" alt="карта">
+    </div>
+      <div class="contact">
+        <p>nёrds design studio</p>
+        <span>191186, Санкт-Петербург,<br>
+        ул. Б. Конюшенная, д. 19/8<br>
+        тел. <a href="#">+7(812)275-75-75</a></span>
+        <a class="write" href="#">напишите нам</a>
+      </div>
+    <footer class="content">
+      <div class="footer-social">
+        <a class="social-btn social-btn-vk" href="#">вконтакте</a>
+        <a class="social-btn social-btn-fb" href="#">фейсбук</a>
+        <a class="social-btn social-btn-inst" href="#">инстаграм</a>
+      </div>
+      <div class="discount">
+        <h2>давайте жить дружно, это выгодно!</h2>
+        <p>скидка 10% для друзей из социальных сетей.</p>
+      </div>
+    </footer>
+    <script src="scripts.js"></script>
+  </body>
+  </html>
