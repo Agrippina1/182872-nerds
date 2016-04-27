@@ -1,8 +1,18 @@
 body {
-  font-size: 16px;
+  font-size: 15px;
   line-height: 22px;
   color: #283136;
   font-family: "Roboto Medium", Helvetica, Arial, sans-serif;
+}
+h1 {
+  width: 350px;
+  height: 80px;
+  margin: 0 auto;;
+  padding: 0 10px;
+  font-size: 40px;
+  line-height: 1em;
+  background: #eeeeee;
+  margin-bottom: 85px;
 }
 h2 {
   font-size: 30px;
@@ -13,4 +23,182 @@ h3 {
   font-size: 16px;
   line-height: 30px;
   color: #000000;
+}
+header {
+  background-color: #eeeeee;
+}
+.clearfix::after {
+  content: '';
+
+  display: table;
+  clear: both;
+}
+.container {
+  width: 880px;
+  margin: 0 auto;
+  padding: 0 10;
+}
+.main-header {
+  margin-bottom: 60px;
+}
+.index-logo {
+  float: left;
+  width: 139px;
+  height: 56px;
+}
+.main-navigation {
+  float: left;
+  width: 470px;
+}
+.main-navigation li {
+  display: inline-block;
+}
+.user-block {
+  float: right;
+  width: 100px;
+}
+.content {
+  width: 880px;
+  margin: 0 auto;
+  background: #87e88b;
+  margin-bottom: 80px;
+}
+.welcome {
+  width: 700px;
+  height: 80px;
+  margin: 0 auto;;
+  padding: 0 10px;
+  font-size: 40px;
+  line-height: 1em;
+  background: #eeeeee;
+  margin-bottom: 85px;
+  text-align: center;
+}
+.main-slider {
+  background: #eeeeee;
+  min-height: 350px;
+  margin-bottom: 85px;
+}
+.slogan {
+  float: left;
+  width: 430px;
+}
+.slider {
+  background: #474e5d;
+  float: right;
+  width: 450px;
+  min-height: 250px;
+}
+.offer {
+  margin-bottom: 85px;
+  text-align: justify;
+}
+.offer::after {
+
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+.offer-item {
+  display: inline-block;
+  width: 240px;
+  vertical-align: top;
+}
+.offer-item:nth-child(3) {
+  margin-right: 0;
+}
+.features {
+  min-height: 320px;
+  margin-bottom: 80px;
+}
+.features-item:nth-child(1) {
+  float: left;
+  width: 600px;
+}
+.container-clients {
+  width: 880px;
+  margin: 0 auto;
+  padding: 0 10px;
+  margin-bottom: 90px;
+}
+.clients {
+  display: inline-block;
+  vertical-align: top;
+}
+.clients-glukhanko {
+  width: 198px;
+  height: 37px;
+  margin-right: 100px;
+}
+.clients-htmlacademy {
+  width: 199px;
+  height: 68px;
+  margin-right: 100px;
+}
+.clients-barbeshop {
+  width: 209px;
+  height: 90px;
+  margin-right: 0;
+}
+.filter {
+  float: left;
+  width: 240px;
+  background: #efd5d5;
+  min-height: 800px;
+  margin-right: 80px;
+}
+.breadcrumbs li {
+  display: inline-block;
+}
+.gallery {
+  float: right;
+  width: 560px;
+  background: #ccc;
+  text-align: justify;
+}
+.gallery-content {
+  display: inline-block;
+  width: 240px;
+  margin: 0px;
+  margin-right: 75px;
+}
+.gallery-content:nth-child(2n) {
+  margin-right: 0;
+}
+.map {
+  width: 1199px;
+  height: 416px;
+}
+.main-footer {
+  background: #a5bfb4;
+}
+.contact {
+  width: 250px;
+  height: 240px;
+  background: white;
+  background: #f3f16a;
+}
+.main-footer {
+  clear: both;
+  width: 890px;
+  margin: 0 auto;
+  padding: 0 10px;
+  min-height: 217px;
+}
+.footer-social {
+  float: left;
+  width: 240px;
+  margin-right: 70px;
+  padding-top: 79px;
+  padding-bottom: 77px;
+}
+.discount {
+  float: right;
+  width: 570px;
+  margin-right: 0px;
+  padding-top: 80px;
+  padding-bottom: 75px;
+}
+main {
+  background: d3ea76;
 }

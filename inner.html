@@ -7,7 +7,7 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
+      <div class="container clearfix">
         <div class="index-logo">
           <a href="#">
             <img src="img/nerds-logo.png" width="139" height="56" alt="nёrds">
@@ -34,145 +34,155 @@
         </div>
       </div>
     </header>
-    <h1>добро пожаловать в магазин готовых макетов</h1>
-    <main class="container">
-      <div class="range-filter">
-        <h3>стоимость:</h3>
-        <div class="range-controls">
-          <div class="scale"></div>
-          <div class="toggle min-toggle"></div>
-          <div class="toggle max-toggle"></div>
-        </div>
-        <div class="price-controls">
-          от <input class="min-price" type="text" value="0">
-          до <input class="max-price" type="text" value="15000">
-        </div>
-      </div>
+    <h1 class="welcome">добро пожаловать в магазин готовых макетов</h1>
+    <main class="content clearfix">
       <section class="filter">
-        <h3>сетка:</h3>
         <form action="https://echo" method="post">
-          <label>
-            <input id="adaptive-field" type="radio" name="adaptive" value="адаптивная" checked>адаптивная
-          </label>
-          <label>
-            <input id="fixed-field" type="radio" name="fixed" value="фиксированная">фиксированная
-          </label>
-          <label>
-            <input id="rubber-field" type="radio" name="rubber" value="резиновая">резиновая
-          </label>
-          <h3>особенности:</h3>
-          <ul class="features">
-            <li>
-              <input id="slider-field" type="checkbox" name="slider" checked>
-              <label for="slider-field">слайдер</label>
-            </li>
-            <li>
-              <input id="features-field" type="checkbox" name="features">
-              <label for="features-field">блок преимуществ</label>
-            </li>
-            <li>
-              <input id="news-field" type="checkbox" name="news" checked>
-              <label for="news-field">новости</label>
-            </li>
-            <li>
-              <input id="gallery-field" type="checkbox" name="gallery">
-              <label for="gallery-field">галерея</label>
-            </li>
-            <li>
-              <input id="basket-field" type="checkbox" name="basket">
-              <label for="basket-field">корзина</label>
+          <div class="range-filter">
+            <h3>стоимость:</h3>
+            <div class="range-controls">
+              <div class="scale"></div>
+              <div class="toggle min-toggle"></div>
+              <div class="toggle max-toggle"></div>
+            </div>
+            <div class="price-controls">
+              от <input class="min-price" type="text" value="0">
+              до <input class="max-price" type="text" value="15000">
+            </div>
+          </div>
+            <h3>сетка:</h3>
+            <ul>
+              <li>
+                <label>
+                  <input id="adaptive-field" type="radio" name="adaptive" value="адаптивная" checked>адаптивная
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input id="fixed-field" type="radio" name="fixed" value="фиксированная">фиксированная
+                </label>
+              </li>
+              <li>
+                <label>
+                  <input id="rubber-field" type="radio" name="rubber" value="резиновая">резиновая
+                </label>
+              </li>
             </ul>
-          <a href="#" class="show">показать</a>
-        </form>
+            <h3>особенности:</h3>
+            <ul class="features">
+              <li>
+                <input id="slider-field" type="checkbox" name="slider" checked>
+                <label for="slider-field">слайдер</label>
+              </li>
+              <li>
+                <input id="features-field" type="checkbox" name="features">
+                <label for="features-field">блок преимуществ</label>
+              </li>
+              <li>
+                <input id="news-field" type="checkbox" name="news" checked>
+                <label for="news-field">новости</label>
+              </li>
+              <li>
+                <input id="gallery-field" type="checkbox" name="gallery">
+                <label for="gallery-field">галерея</label>
+              </li>
+              <li>
+                <input id="basket-field" type="checkbox" name="basket">
+                <label for="basket-field">корзина</label>
+              </ul>
+            <button class="show">показать</button>
+          </form>
       </section>
-      <div class="breadcrumbs">
-        <ul>
-          <li>
-            <span>сортировать:</span>
-          </li>
-          <li>
-            <a href="#">по цене</a>
-          </li>
-          <li>
-            <a href="#">по типу</a>
-          </li>
-          <li>
-            <a href="#">по функционалу</a>
-          </li>
-        </ul>
-      </div>
-      <div class="btn">
-        <button class="btn-up" type="button">вверх</button>
-        <button class="btn-down" type="button">вниз</button>
-      </div>
-      <section class="gallery">
-        <figure class="gallery-content">
-          <div class="slider-nav">
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
+      <section class="main-gallery">
+        <div class="breadcrumbs">
+          <ul>
+            <li>
+              <span>сортировать:</span>
+            </li>
+            <li>
+              <a href="#">по цене</a>
+            </li>
+            <li>
+              <a href="#">по типу</a>
+            </li>
+            <li>
+              <a href="#">по функционалу</a>
+            </li>
+          </ul>
+          <div class="btn">
+            <a class="btn-up" href="#">вверх</a>
+            <a class="btn-down" href="#">вниз</a>
           </div>
-          <div class="galleery-image">
-            <img src="img/aviator.jpg" width="240" height="240" alt="">
+        </div>
+        <section class="gallery">
+          <figure class="gallery-content">
+            <div class="slider-nav">
+              <a href="#">O</a>
+              <a href="#">O</a>
+              <a href="#">O</a>
+            </div>
+            <div class="galleery-image">
+              <img src="img/aviator.jpg" width="240" height="240" alt="">
+            </div>
+          </figure>
+          <figure class="gallery-content">
+            <div class="slider-nav">
+              <a href="#">O</a>
+              <a href="#">O</a>
+              <a href="#">O</a>
+            </div>
+            <div class="galleery-image">
+              <img src="img/shore.jpg" width="240" height="240" alt="">
+            </div>
+          </figure>
+          <figure class="gallery-content">
+            <div class="slider-nav">
+              <a href="#">O</a>
+              <a href="#">O</a>
+              <a href="#">O</a>
+            </div>
+            <div class="galleery-image">
+              <img src="img/forte.jpg" width="240" height="240" alt="">
+            </div>
+          </figure>
+          <figure class="gallery-content">
+            <div class="slider-nav">
+              <a href="#">O</a>
+              <a href="#">O</a>
+              <a href="#">O</a>
+            </div>
+            <div class="galleery-image">
+              <img src="img/food.jpg" width="240" height="240" alt="">
+            </div>
+          </figure>
+          <figure class="gallery-content">
+            <div class="slider-nav">
+              <a href="#">O</a>
+              <a href="#">O</a>
+              <a href="#">O</a>
+            </div>
+            <div class="galleery-image">
+              <img src="img/avenue.jpg" width="239" height="240" alt="">
+            </div>
+          </figure>
+          <figure class="gallery-content">
+            <div class="slider-nav">
+              <a href="#">O</a>
+              <a href="#">O</a>
+              <a href="#">O</a>
+            </div>
+            <div class="galleery-image">
+              <img src="img/dovetail.jpg" width="239" height="240" alt="">
+            </div>
+          </figure>
+          <div class="pagination">
+            <a href="#">1</a>
+            <a href="#">2</a>
+            <a href="#">3</a>
+            <a href="#">следующая</a>
           </div>
-        </figure>
-        <figure class="gallery-content">
-          <div class="slider-nav">
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-          </div>
-          <div class="galleery-image">
-            <img src="img/shore.jpg" width="240" height="240" alt="">
-          </div>
-        </figure>
-        <figure class="gallery-content">
-          <div class="slider-nav">
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-          </div>
-          <div class="galleery-image">
-            <img src="img/forte.jpg" width="240" height="240" alt="">
-          </div>
-        </figure>
-        <figure class="gallery-content">
-          <div class="slider-nav">
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-          </div>
-          <div class="galleery-image">
-            <img src="img/food.jpg" width="240" height="240" alt="">
-          </div>
-        </figure>
-        <figure class="gallery-content">
-          <div class="slider-nav">
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-          </div>
-          <div class="galleery-image">
-            <img src="img/avenue.jpg" width="239" height="240" alt="">
-          </div>
-        </figure>
-        <figure class="gallery-content">
-          <div class="slider-nav">
-            <a href="#"></a>
-            <a href="#"></a>
-            <a href="#"></a>
-          </div>
-          <div class="galleery-image">
-            <img src="img/dovetail.jpg" width="239" height="240" alt="">
-          </div>
-        </figure>
+        </section>
       </section>
-      <div class="pagination">
-          <a href="#">1</a>
-          <a href="#">2</a>
-          <a href="#">3</a>
-          <a href="#">следующая</a>
-      </div>
     </main>
     <div class="map">
       <img src="img/map.gif" width="1199" height="416" alt="карта">
@@ -184,7 +194,7 @@
         тел. <a href="#">+7(812)275-75-75</a></span>
         <a class="write" href="#">напишите нам</a>
       </div>
-    <footer class="content">
+    <footer class="main-footer">
       <div class="footer-social">
         <a class="social-btn social-btn-vk" href="#">вконтакте</a>
         <a class="social-btn social-btn-fb" href="#">фейсбук</a>
