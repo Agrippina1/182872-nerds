@@ -7,8 +7,7 @@ body {
 h1 {
   width: 350px;
   height: 80px;
-  margin: 0 auto;;
-  padding: 0 10px;
+  margin: 0;
   font-size: 40px;
   line-height: 1em;
   background: #eeeeee;
@@ -38,13 +37,12 @@ header {
   margin: 0 auto;
   padding: 0 10;
 }
-.main-header {
-  margin-bottom: 60px;
-}
 .index-logo {
   float: left;
   width: 139px;
   height: 56px;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 .main-navigation {
   float: left;
@@ -63,21 +61,31 @@ header {
   background: #87e88b;
   margin-bottom: 80px;
 }
+.main-welcome {
+  background: #eeeeee;
+  min-height: 214px;
+  margin-bottom: 80px;
+}
 .welcome {
   width: 700px;
   height: 80px;
-  margin: 0 auto;;
-  padding: 0 10px;
+  margin: 0 auto;
   font-size: 40px;
   line-height: 1em;
   background: #eeeeee;
   margin-bottom: 85px;
   text-align: center;
+  padding-top: 50px;
+}
+.slider-container {
+  width: 880px;
+  margin: 0 auto;
+  padding: 0 10;
 }
 .main-slider {
   background: #eeeeee;
-  min-height: 350px;
-  margin-bottom: 85px;
+  min-height: 320px;
+  margin-bottom: 80px;
 }
 .slogan {
   float: left;
@@ -86,7 +94,7 @@ header {
 .slider {
   background: #474e5d;
   float: right;
-  width: 450px;
+  width: ;
   min-height: 250px;
 }
 .offer {
@@ -94,8 +102,8 @@ header {
   text-align: justify;
 }
 .offer::after {
-
   content: '';
+
   display: inline-block;
   width: 100%;
 }
@@ -113,27 +121,31 @@ header {
 }
 .features-item:nth-child(1) {
   float: left;
-  width: 600px;
+  width: 620px;
+}
+.features-item:nth-child(2) {
+  float: right;
+  width: 240px;
 }
 .container-clients {
-  width: 880px;
   margin: 0 auto;
+  width: 880px;
   padding: 0 10px;
   margin-bottom: 90px;
 }
 .clients {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
 }
 .clients-glukhanko {
   width: 198px;
   height: 37px;
-  margin-right: 100px;
+  margin-right: 130px;
 }
 .clients-htmlacademy {
   width: 199px;
   height: 68px;
-  margin-right: 100px;
+  margin-right: 130px;
 }
 .clients-barbeshop {
   width: 209px;
@@ -156,16 +168,24 @@ header {
   background: #ccc;
   text-align: justify;
 }
+.gallery::after {
+
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
 .gallery-content {
   display: inline-block;
   width: 240px;
   margin: 0px;
   margin-right: 75px;
+  vertical-align: top;
 }
 .gallery-content:nth-child(2n) {
   margin-right: 0;
 }
 .map {
+  margin: 0 auto;
   width: 1199px;
   height: 416px;
 }
@@ -173,14 +193,16 @@ header {
   background: #a5bfb4;
 }
 .contact {
+  position: relative;
+  bottom: 345px;
+  left: 230px;
   width: 250px;
   height: 240px;
-  background: white;
   background: #f3f16a;
 }
 .main-footer {
   clear: both;
-  width: 890px;
+  width: 880px;
   margin: 0 auto;
   padding: 0 10px;
   min-height: 217px;
@@ -196,9 +218,7 @@ header {
   float: right;
   width: 570px;
   margin-right: 0px;
-  padding-top: 80px;
-  padding-bottom: 75px;
 }
 main {
-  background: d3ea76;
+  background: #d3ea76;
 }
