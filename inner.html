@@ -3,10 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic">
+    <link rel="stylesheet" href="css/normalise.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="main-header">
+    <header class="main-header second">
       <div class="container clearfix">
         <div class="index-logo">
           <a href="#">
@@ -29,15 +31,15 @@
             </li>
           </ul>
         </nav>
-        <div class="basket">
-          <a href="#">корзина</a>
+        <div class="user-block">
+          <a class="basket "href="#">корзина</a>
         </div>
       </div>
     </header>
     <div class="main-welcome">
-      <h1 class="welcome">добро пожаловать в магазин готовых макетов</h1>
+      <h1 class="welcome">Добро пожаловать в магазин готовых макетов</h1>
     </div>
-    <main class="content clearfix">
+    <main class="content-second clearfix">
       <section class="filter">
         <form action="https://echo" method="post">
           <div class="range-filter">
@@ -48,49 +50,51 @@
               <div class="toggle max-toggle"></div>
             </div>
             <div class="price-controls">
-              от <input class="min-price" type="text" value="0">
-              до <input class="max-price" type="text" value="15000">
+              <span class="from-to">от</span>
+              <input class="min-price" type="text" value="0">
+              <span class="from-to">до</span>
+              <input class="max-price" type="text" value="15000">
             </div>
           </div>
             <h3>сетка:</h3>
             <ul>
               <li>
-                <label>
-                  <input id="adaptive-field" type="radio" name="adaptive" value="адаптивная" checked>адаптивная
+                <label class="specifics">
+                  <input id="adaptive-field" type="radio" name="adaptive" value="Адаптивная" checked>Адаптивная
                 </label>
               </li>
               <li>
-                <label>
-                  <input id="fixed-field" type="radio" name="fixed" value="фиксированная">фиксированная
+                <label class="specifics">
+                  <input id="fixed-field" type="radio" name="fixed" value="Фиксированная">Фиксированная
                 </label>
               </li>
               <li>
-                <label>
-                  <input id="rubber-field" type="radio" name="rubber" value="резиновая">резиновая
+                <label class="specifics">
+                  <input id="rubber-field" type="radio" name="rubber" value="Резиновая">Резиновая
                 </label>
               </li>
             </ul>
             <h3>особенности:</h3>
-            <ul class=" specificity">
+            <ul class="specificity">
               <li>
                 <input id="slider-field" type="checkbox" name="slider" checked>
-                <label for="slider-field">слайдер</label>
+                <label class="specifics" for="slider-field">Слайдер</label>
               </li>
               <li>
                 <input id="features-field" type="checkbox" name="features">
-                <label for="features-field">блок преимуществ</label>
+                <label class="specifics" for="features-field">Блок преимуществ</label>
               </li>
               <li>
                 <input id="news-field" type="checkbox" name="news" checked>
-                <label for="news-field">новости</label>
+                <label class="specifics" for="news-field">Новости</label>
               </li>
               <li>
                 <input id="gallery-field" type="checkbox" name="gallery">
-                <label for="gallery-field">галерея</label>
+                <label class="specifics" for="gallery-field">Галерея</label>
               </li>
               <li>
                 <input id="basket-field" type="checkbox" name="basket">
-                <label for="basket-field">корзина</label>
+                <label class="specifics" for="basket-field">Корзина</label>
               </ul>
             <button class="show">показать</button>
           </form>
@@ -110,11 +114,13 @@
             <li>
               <a href="#">по функционалу</a>
             </li>
+            <li>
+              <a class="btn btn-up" href="#">вверх</a>
+            </li>
+            <li>
+              <a class=" btn btn-down" href="#">вниз</a>
+            </li>
           </ul>
-          <div class="btn">
-            <a class="btn-up" href="#">вверх</a>
-            <a class="btn-down" href="#">вниз</a>
-          </div>
         </div>
         <section class="gallery">
           <figure class="gallery-content">
@@ -153,13 +159,19 @@
             <a href="#">3</a>
             <a href="#">следующая</a>
           </div>
+          <div class="sunset">
+            <h3>sunset</h3>
+            <span>Интернет-магазин<br>
+            с личным кабинетом</span><br>
+            <button class="price">10000 р.</button>
+          </div>
         </section>
       </section>
     </main>
     <div class="map">
       <img src="img/map.gif" width="1199" height="416" alt="карта">
       <div class="contact">
-        <p>nёrds design studio</p>
+        <h3>nёrds design studio</h3>
         <span>191186, Санкт-Петербург,<br>
         ул. Б. Конюшенная, д. 19/8<br>
         тел. <a href="#">+7(812)275-75-75</a></span><br>
@@ -173,8 +185,8 @@
         <a class="social-btn social-btn-inst" href="#">инстаграм</a>
       </div>
       <div class="discount">
-        <h3>давайте жить дружно, это выгодно!</h3>
-        <p>скидка 10% для друзей из социальных сетей.</p>
+        <h3>Давайте дружить, это выгодно!</h3>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
     <script src="scripts.js"></script>
