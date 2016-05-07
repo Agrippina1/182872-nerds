@@ -3,12 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&subset=latin,cyrillic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500&subset=latin,cyrillic">
     <link rel="stylesheet" href="css/normalise.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="main-header second">
+    <header class="main-header">
       <div class="container clearfix">
         <div class="index-logo">
           <a href="#">
@@ -32,7 +32,7 @@
           </ul>
         </nav>
         <div class="user-block">
-          <a class="basket "href="#">корзина</a>
+          <a class="basket" href="#">корзина</a>
         </div>
       </div>
     </header>
@@ -41,60 +41,62 @@
     </div>
     <main class="content-second clearfix">
       <section class="filter">
-        <form action="https://echo" method="post">
+        <form action="form.php" method="get">
           <div class="range-filter">
             <h3>стоимость:</h3>
             <div class="range-controls">
-              <div class="scale"></div>
+              <div class="scale">
+                <div class="bar">
+                </div>
+              </div>
               <div class="toggle min-toggle"></div>
               <div class="toggle max-toggle"></div>
             </div>
             <div class="price-controls">
-              <span class="from-to">от</span>
-              <input class="min-price" type="text" value="0">
-              <span class="from-to">до</span>
-              <input class="max-price" type="text" value="15000">
+              <label class="min-prise">от
+              <input name="min-prise" type="text" value="0">
+              </label>
+              <label class="max-price">до
+              <input name="max-price" type="text" value="15000">
+              </label>
             </div>
           </div>
             <h3>сетка:</h3>
             <ul>
               <li>
-                <label class="specifics">
-                  <input id="adaptive-field" type="radio" name="adaptive" value="Адаптивная" checked>Адаптивная
-                </label>
+                <input id="adaptive-field" type="radio" name="adaptive" checked>
+                <label for="adaptive-field">Адаптивная</label>
               </li>
               <li>
-                <label class="specifics">
-                  <input id="fixed-field" type="radio" name="fixed" value="Фиксированная">Фиксированная
-                </label>
+                <input id="fixed-field" type="radio" name="fixed">
+                <label for="fixed-field" type="radio">Фиксированная</label>
               </li>
               <li>
-                <label class="specifics">
-                  <input id="rubber-field" type="radio" name="rubber" value="Резиновая">Резиновая
-                </label>
+                <input id="rubber-field" type="radio" name="rubber">
+                <label for="rubber-field">Резиновая</label>
               </li>
             </ul>
             <h3>особенности:</h3>
-            <ul class="specificity">
+            <ul class="specific">
               <li>
                 <input id="slider-field" type="checkbox" name="slider" checked>
-                <label class="specifics" for="slider-field">Слайдер</label>
+                <label for="slider-field">Слайдер</label>
               </li>
               <li>
                 <input id="features-field" type="checkbox" name="features">
-                <label class="specifics" for="features-field">Блок преимуществ</label>
+                <label for="features-field">Блок преимуществ</label>
               </li>
               <li>
                 <input id="news-field" type="checkbox" name="news" checked>
-                <label class="specifics" for="news-field">Новости</label>
+                <label for="news-field">Новости</label>
               </li>
               <li>
                 <input id="gallery-field" type="checkbox" name="gallery">
-                <label class="specifics" for="gallery-field">Галерея</label>
+                <label for="gallery-field">Галерея</label>
               </li>
               <li>
                 <input id="basket-field" type="checkbox" name="basket">
-                <label class="specifics" for="basket-field">Корзина</label>
+                <label for="basket-field">Корзина</label>
               </ul>
             <button class="show">показать</button>
           </form>
@@ -125,32 +127,44 @@
         <section class="gallery">
           <figure class="gallery-content">
             <div class="galleery-image">
-              <img src="img/aviator.jpg" width="240" height="240" alt="">
+              <a href="#">
+                <img src="img/aviator.jpg" width="240" height="240" alt="">
+              </a>
             </div>
           </figure>
           <figure class="gallery-content">
             <div class="galleery-image">
-              <img src="img/shore.jpg" width="240" height="240" alt="">
+              <a href="#">
+                <img src="img/shore.jpg" width="240" height="240" alt="">
+              </a>
             </div>
           </figure>
           <figure class="gallery-content">
             <div class="galleery-image">
-              <img src="img/forte.jpg" width="240" height="240" alt="">
+              <a href="#">
+                <img src="img/forte.jpg" width="240" height="240" alt="">
+              </a>
             </div>
           </figure>
           <figure class="gallery-content">
             <div class="galleery-image">
-              <img src="img/food.jpg" width="240" height="240" alt="">
+              <a href="#">
+                <img src="img/food.jpg" width="240" height="240" alt="">
+              </a>
             </div>
           </figure>
           <figure class="gallery-content">
             <div class="galleery-image">
-              <img src="img/avenue.jpg" width="239" height="240" alt="">
+              <a href="#">
+                <img src="img/avenue.jpg" width="239" height="240" alt="">
+              </a>
             </div>
           </figure>
           <figure class="gallery-content">
             <div class="galleery-image">
-              <img src="img/dovetail.jpg" width="239" height="240" alt="">
+              <a href="#">
+                <img src="img/dovetail.jpg" width="239" height="240" alt="">
+              </a>
             </div>
           </figure>
           <div class="pagination">
@@ -159,11 +173,41 @@
             <a href="#">3</a>
             <a href="#">следующая</a>
           </div>
+          <div class="aviator">
+            <h3>aviator</h3>
+            <span>Одностраничный макет<br>
+            с авторским дизайном</span><br>
+            <button class="price">8000 р.</button>
+          </div>
           <div class="sunset">
             <h3>sunset</h3>
             <span>Интернет-магазин<br>
             с личным кабинетом</span><br>
             <button class="price">10000 р.</button>
+          </div>
+          <div class="forte">
+            <h3>forte</h3>
+            <span>Отличный макет<br>
+            для личного блога</span><br>
+            <button class="price">5000 р.</button>
+          </div>
+          <div class="modern">
+            <h3>modern organic thai</h3>
+            <span>Сайт для ресторана<br>
+            быстрого питания</span><br>
+            <button class="price">12000 р.</button>
+          </div>
+          <div class="avenue">
+            <h3>avenue</h3>
+            <span>Макет для блога<br>
+            о путешествиях</span><br>
+            <button class="price">8000 р.</button>
+          </div>
+          <div class="dovetail">
+            <h3>dovetail</h3>
+            <span>Интернет-магазин<br>
+            с галереей товаров</span><br>
+            <button class="price">14000 р.</button>
           </div>
         </section>
       </section>
@@ -174,7 +218,7 @@
         <h3>nёrds design studio</h3>
         <span>191186, Санкт-Петербург,<br>
         ул. Б. Конюшенная, д. 19/8<br>
-        тел. <a href="#">+7(812)275-75-75</a></span><br>
+        <a href="#">тел. +7(812)275-75-75</a></span><br>
         <a class="write" href="#">напишите нам</a>
       </div>
     </div>
