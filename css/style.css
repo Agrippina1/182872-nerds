@@ -9,12 +9,12 @@ body {
 .sprite {
   background-image: url(spritesheet.png);
   background-repeat: no-repeat;
-  display: block;
+ display: block;
 }
 .sprite--icon-basket {
-  width: 15px;
-  height: 15px;
-  background-position: -25px -25px;
+ width: 15px;
+ height: 15px;
+ background-position: -25px -25px;
 }
 .sprite--icon-check-off {
   width: 23px;
@@ -81,20 +81,30 @@ body {
   height: 15px;
   background-position: -25px -889px;
 }
+.sprite-icon-basket-active {
+  width: 15px;
+  height: 15px;
+  background-position: -25px -954px;
+}
+.sprite-icon-basket-hover {
+  width: 15px;
+  height: 15px;
+  background-position: -25px -1019px;
+}
 .sprite-line-red {
   width: 25px;
   height: 2px;
-  background-position: -25px -954px;
+  background-position: -25px -1084px;
 }
 .sprite-nerds-marker {
   width: 231px;
   height: 190px;
-  background-position: -25px -1006px;
+  background-position: -25px -1136px;
 }
 .sprite-small {
   width: 240px;
   height: 30px;
-  background-position: -25px -1246px;
+  background-position: -25px -1376px;
 }
 h2 {
   font-size: 18px;
@@ -166,6 +176,12 @@ header {
 .main-navigation .active {
   position: relative;
 }
+.main-navigation .active a:hover {
+  color: #272727;
+}
+.main-navigation .active a:active {
+  color: #272727;
+}
 .main-navigation .active::after {
   content: "";
   position: absolute;
@@ -209,6 +225,12 @@ header {
   background: transparent url("../img/sprite.png") no-repeat;
   background-position: -25px -25px;
   opacity: 0.3;
+}
+.basket:hover::before {
+  background-position: -25px -1019px;
+}
+.basket:active::before {
+  background-position: -25px -954px;
 }
 .main-slider {
   padding: 20px 0 80px 0;
@@ -332,12 +354,11 @@ header {
 }
 .main-welcome h1 {
   font-size: 40px;
-  line-height: 1;
+  line-height: 43px;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-weight: 500;
   text-transform: uppercase;
-  margin: 0;
-  margin-left: 320px;
+  margin: 0 auto;
   margin-bottom: 74px;
 }
 .offer {
@@ -405,12 +426,15 @@ header {
 }
 .btn1:active {
   background: #b63538;
+  border-top: 3px solid #9b2d30;
 }
 .btn2:active {
   background: #009053;
+  border-top: 3px solid #007b47;
 }
 .btn3:active {
   background: #c09b24;
+  border-top: 3px solid #a3841f;
 }
 .features-item:nth-child(1) {
   float: left;
@@ -754,6 +778,10 @@ label:disabled {
 .sorting-content {
   margin: 5px 0 18px 0;
 }
+.sorting {
+  float: left;
+  width: 500px;
+}
 .sorting ul {
   font-size: 0;
   list-style: none;
@@ -774,23 +802,16 @@ label:disabled {
   text-decoration: none;
   border-bottom: 1px dotted #00ca74;
   opacity: 0.3;
+  margin-right: 47px;
 }
 .sorting span {
   display: block;
   margin-right: 39px;
 }
-.sorting li:nth-child(2) {
-  margin-right: 44px;
-}
-.sorting li:nth-child(3) {
-  margin-right: 47px;
-}
-.sorting li:nth-child(4) {
-  margin-right: 0;
-}
 .sorting a:hover {
-  opacity: 1;
+  color: #444444;
   border-bottom: 1px solid #00ca74;
+  opacity: 1;
 }
 .sorting a:active {
   opacity: 1;
@@ -804,10 +825,6 @@ label:disabled {
   height: 10px;
   margin-right: 0;
 }
-.sorting {
-  float: left;
-  width: 460px;
-}
 .btn-down-up {
   float: right;
   width: 25px;
@@ -820,7 +837,7 @@ label:disabled {
   vertical-align: middle;
   position: absolute;
   top: 5px;
-  left: 11px;
+  left: 15px;
   width: 11px;
   background: url("../img/sprite.png") no-repeat;
   background-position: -25px -709px;
@@ -877,7 +894,7 @@ label:disabled {
   width: 240px;
   height: 30px;
   background: transparent url("../img/sprite.png") no-repeat;
-  background-position: -25px -1246px;
+  background-position: -25px -1376px;
   opacity: 0.1;
 }
 .gallery-content:hover::before {
@@ -925,43 +942,19 @@ label:disabled {
   background-color: #d5d5d5;
   border-top: 3px solid #b5b5b5;
 }
-.aviator {
+.pagination .active:hover {
+  background: none;
+}
+.cost {
   display: none;
   position: absolute;
   height: 158px;
   top: 50px;
   left: 20px;
   background: #ffffff;
-  padding: 32px 17px 10px 24px;
-}
-.aviator h3 {
-  font-size: 18px;
-  line-height: 9px;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
-  color: #000000;
-  font-weight: 500;
-  text-transform: uppercase;
-  margin-top: 6px;
-  margin-left: 39px;
-}
-.aviator span {
-  display: block;
-  font-size: 14px;
-  line-height: 18px;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
-  color: #283136;
-  font-weight: 500;
-  text-align: center;
-}
-.sunset {
-  position: absolute;
-  height: 158px;
-  top: 50px;
-  left: 340px;
-  background: #ffffff;
   padding: 32px 30px 10px 30px;
 }
-.sunset h3 {
+.cost h3 {
   font-size: 18px;
   line-height: 9px;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
@@ -971,7 +964,7 @@ label:disabled {
   text-align: center;
   margin-top: 7px;
 }
-.sunset span {
+.cost span {
   display: block;
   font-size: 14px;
   line-height: 18px;
@@ -980,122 +973,45 @@ label:disabled {
   font-weight: 500;
   text-align: center;
 }
-.forte {
-  display: none;
-  position: absolute;
-  height: 158px;
-  top: 400px;
-  left: 20px;
-  background: #ffffff;
-  padding: 32px 30px 10px 30px;
+.cost-aviator {
+  padding: 32px 17px 10px 24px;
 }
-.forte h3 {
-  font-size: 18px;
-  line-height: 9px;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
-  color: #000000;
-  font-weight: 500;
-  text-transform: uppercase;
-  text-align: center;
+.cost-aviator h3 {
+  margin-top: 6px;
+  margin-right: 8px;
+}
+.cost-sunset h3 {
+  margin-top: 7px;
+}
+.cost-forte h3 {
   margin-top: 9px;
 }
-.forte span {
-  display: block;
-  font-size: 14px;
-  line-height: 18px;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
-  color: #283136;
-  font-weight: 500;
-  text-align: center;
+.cost-modern {
+  padding: 32px 0 10px 20px;
+  width: 180px;
 }
-.modern {
-  display: none;
-  position: absolute;
-  top: 400px;
-  left: 340px;
-  height: 158px;
-  width: 160px;
-  background: #ffffff;
-  padding: 32px 10px 10px 30px;
-}
-.modern h3 {
+.cost-modern h3 {
   font-size: 18px;
   line-height: 24px;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
-  color: #000000;
-  font-weight: 500;
-  text-transform: uppercase;
-  text-align: center;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 5px;
+  margin-right: 23px;
 }
-.modern span {
-  display: block;
-  font-size: 14px;
-  line-height: 18px;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
-  color: #283136;
-  font-weight: 500;
-  text-align: center;
+.cost-modern span {
+  margin-right: 21px;
 }
-.modern .price {
-  margin-top: -6px;
+.cost-modern .price {
+  margin-top: -9px;
+  margin-left: 10px;
 }
-.avenue {
-  display: none;
-  position: absolute;
-  top: 748px;
-  left: 18px;
-  height: 158px;
-  background: #ffffff;
-  padding: 32px 30px 10px 30px;
-}
-.avenue h3 {
-  font-size: 18px;
-  line-height: 9px;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
-  color: #000000;
-  font-weight: 500;
-  text-transform: uppercase;
-  text-align: center;
+.cost-avenue h3 {
   margin-top: 11px;
 }
-.avenue span {
-  display: block;
-  font-size: 14px;
-  line-height: 18px;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
-  color: #283136;
-  font-weight: 500;
-  text-align: center;
-}
-.dovetail {
-  display: none;
-  position: absolute;
-  top: 748px;
-  left: 340px;
-  height: 158px;
-  background: #ffffff;
-  padding: 32px 30px 10px 30px;
-}
-.dovetail h3 {
-  font-size: 18px;
-  line-height: 9px;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
-  color: #000000;
-  font-weight: 500;
-  text-transform: uppercase;
-  text-align: center;
+.cost-dovetail h3 {
   margin-top: 9px;
 }
-.dovetail span {
+.gallery-content:hover > .cost {
   display: block;
-  font-size: 14px;
-  line-height: 18px;
-  font-family: "Roboto", Helvetica, Arial, sans-serif;
-  color: #283136;
-  font-weight: 500;
-  text-align: center;
 }
 .price {
   display: block;
@@ -1112,7 +1028,7 @@ label:disabled {
   border: none;
   outline: none;
   cursor: pointer;
-  margin-top: 7px;
+  margin-top: 9px;
   padding: 15px;
   border-radius: 3px;
 }
@@ -1125,7 +1041,7 @@ label:disabled {
 .map {
   position: relative;
   margin: 0 auto;
-  width: 1199px;
+  width: 100%;
   height: 416px;
 }
 .contact {
@@ -1191,7 +1107,7 @@ label:disabled {
   width: 231px;
   height: 190px;
   background: transparent url("../img/sprite.png") no-repeat;
-  background-position: -25px -1006px;
+  background-position: -25px -1136px;
 }
 .main-footer {
   clear: both;
