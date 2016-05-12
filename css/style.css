@@ -426,15 +426,15 @@ header {
 }
 .btn1:active {
   background: #b63538;
-  border-top: 3px solid #9b2d30;
+  box-shadow: inset 0 3px 0 0 #9b2d30;
 }
 .btn2:active {
   background: #009053;
-  border-top: 3px solid #007b47;
+  box-shadow: inset 0 3px 0 0 #007b47;
 }
 .btn3:active {
   background: #c09b24;
-  border-top: 3px solid #a3841f;
+  box-shadow: inset 0 3px 0 0 #a3841f;
 }
 .features-item:nth-child(1) {
   float: left;
@@ -773,7 +773,7 @@ label:disabled {
 }
 .show:active {
   background-color: #d5d5d5;
-  border-top: 3px solid #b5b5b5;
+  box-shadow: inset 0 3px 0 0 #b5b5b5;
 }
 .sorting-content {
   margin: 5px 0 18px 0;
@@ -801,7 +801,7 @@ label:disabled {
   display: block;
   text-decoration: none;
   border-bottom: 1px dotted #00ca74;
-  opacity: 0.3;
+  color: #b2b2b2;
   margin-right: 47px;
 }
 .sorting span {
@@ -940,7 +940,7 @@ label:disabled {
 }
 .pagination a:active {
   background-color: #d5d5d5;
-  border-top: 3px solid #b5b5b5;
+  box-shadow: inset 0 3px 0 0 #b5b5b5;
 }
 .pagination .active:hover {
   background: none;
@@ -1037,12 +1037,14 @@ label:disabled {
 }
 .price:active {
   background-color: #b63538;
+  box-shadow: inset 0 3px 0 0 #9b2d30;
 }
 .map {
   position: relative;
   margin: 0 auto;
   width: 100%;
-  height: 416px;
+  height: auto;
+  max-width: 1199px;
 }
 .contact {
   position: absolute;;
@@ -1111,17 +1113,17 @@ label:disabled {
 }
 .main-footer {
   clear: both;
-  width: 1180px;
+  width: 900px;
   min-height: 217px;
   margin: 0 auto;
   padding: 0 10px;
 }
 .footer-social {
   float: left;
-  width: 310px;
-  padding-top: 78px;
+  width: 270px;
+  padding-top: 74px;
   padding-bottom: 77px;
-  margin-left: 142px;
+  margin-left: 3px;
 }
 .social-btn {
   display: inline-block;
@@ -1152,15 +1154,14 @@ label:disabled {
 }
 .discount {
   float: right;
-  width: 720px;
+  width: 570px;
 }
 .discount h3 {
   font-size: 36px;
   height: 36px;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-weight: 500;
-  padding-left: 8px;
-  margin-top: 75px;
+  margin-top: 71px;
   margin-bottom: 0;
 }
 .discount p {
@@ -1168,7 +1169,6 @@ label:disabled {
   line-height: 22px;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
   font-weight: 500;
-  padding-left: 10px;
   margin-top: 8px;
 }
 .content-second {
@@ -1177,7 +1177,6 @@ label:disabled {
   margin-bottom: 30px;
 }/*Всплывающая форма*/
 .modal-content {
-  display: none;
   background: #ffffff;
   position: relative;
   bottom: 665px;
@@ -1247,7 +1246,7 @@ label:disabled {
 .login-form input[type="text"]:hover {
   border: 2px solid #a2a9ac;
 }
-.login-form input[type="text"]:active {
+.login-form input[type="text"]:focus {
   border: 2px solid #56bffb;
 }
 textarea {
@@ -1266,7 +1265,7 @@ textarea {
 textarea:hover {
   border: 2px solid #a2a9ac;
 }
-textarea:active {
+textarea:focus {
   border: 2px solid #56bffb;
 }
 .login-form .btn-user {
@@ -1288,4 +1287,10 @@ textarea:active {
   margin-bottom: 48px;
   border-radius: 5px;
   background-color: #fb565a;
+}
+.login-form .btn-user:hover {
+  background-color: #d6494d;
+}
+.login-form .btn-user:active {
+  background-color: #b63538;
 }
