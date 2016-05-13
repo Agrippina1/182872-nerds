@@ -1,5 +1,5 @@
 body {
-  min-width: 900px;
+  /*min-width: 900px;*/
   font-size: 15px;
   line-height: 22px;
   color: #283136;
@@ -131,7 +131,7 @@ header {
 .container {
   width: 880px;
   margin: 0 auto;
-  padding: 0 10;
+  padding: 0 10px;
 }
 .index-logo {
   float: left;
@@ -801,7 +801,8 @@ label:disabled {
   display: block;
   text-decoration: none;
   border-bottom: 1px dotted #00ca74;
-  color: #b2b2b2;
+  color: #000000;
+  opacity: 0.3;
   margin-right: 47px;
 }
 .sorting span {
@@ -810,13 +811,13 @@ label:disabled {
 }
 .sorting a:hover {
   color: #444444;
-  border-bottom: 1px solid #00ca74;
   opacity: 1;
+  border-bottom: 1px solid #00ca74;
 }
 .sorting a:active {
+  color: #444444;
   opacity: 1;
   border-bottom: none;
-  color: #000000;
 }
 .sorting .btn {
   font-size: 0;
@@ -976,6 +977,9 @@ label:disabled {
 .cost-aviator {
   padding: 32px 17px 10px 24px;
 }
+.cost-sunset {
+  display: block;
+}
 .cost-aviator h3 {
   margin-top: 6px;
   margin-right: 8px;
@@ -1042,6 +1046,9 @@ label:disabled {
 .map {
   position: relative;
   margin: 0 auto;
+  width: 1200px;
+}
+.map img {
   width: 100%;
   height: auto;
   max-width: 1199px;
@@ -1105,7 +1112,7 @@ label:disabled {
   content: "";
   position: absolute;
   top: 112px;
-  left: 840px;
+  right: 130px;
   width: 231px;
   height: 190px;
   background: transparent url("../img/sprite.png") no-repeat;
@@ -1177,6 +1184,8 @@ label:disabled {
   margin-bottom: 30px;
 }/*Всплывающая форма*/
 .modal-content {
+  display: none;
+  position: absolute;
   background: #ffffff;
   position: relative;
   bottom: 665px;
@@ -1185,6 +1194,9 @@ label:disabled {
   padding: 40px 70px 1px 80px;
   color: #000000;
   box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7)
+}
+.modal-content-show {
+  display: block;
 }
 .modal-content-close {
   position: absolute;
