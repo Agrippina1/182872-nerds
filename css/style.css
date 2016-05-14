@@ -836,7 +836,7 @@ label:disabled {
   height: 10px;
   margin-right: 0;
 }
-.sorying .active {
+.sorting .active {
   color: #444444;
   opacity: 1;
   border-bottom: none;
