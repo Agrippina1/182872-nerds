@@ -313,6 +313,7 @@ header {
 }
 .info:active {
   background: #b63538;
+  box-shadow: inset 0 3px 0 0 #9b2d30;
 }
 .slide:nth-child(1) {
   background: url("../img/screens.png") no-repeat 542px 38px;
@@ -855,14 +856,8 @@ label:disabled {
 .btn-up:hover {
   background-position: -25px -709px;
 }
-.btn-down:hover {
-  background-position: -25px -386px;
-}
 .btn-up:active {
   background-position: -25px -769px;
-}
-.btn-down:active {
-  background-position: -25px -446px;
 }
 .main-gallery {
   float: right;
@@ -1107,6 +1102,7 @@ label:disabled {
 }
 .write:active {
   background-color: #b63538;
+  box-shadow: inset 0 3px 0 0 #9b2d30;
 }
 .map::before {
   content: "";
@@ -1187,9 +1183,8 @@ label:disabled {
   display: none;
   position: absolute;
   background: #ffffff;
-  position: relative;
-  bottom: 665px;
-  left: 350px;
+  bottom: 40px;
+  left: 275px;
   width: 480px;
   padding: 40px 70px 1px 80px;
   color: #000000;
@@ -1236,6 +1231,7 @@ label:disabled {
   width: 240px;
 }
 .login-form label {
+  display: block;
   font-size: 16px;
   line-height: 18px;
   font-family: "Roboto", Helvetica, Arial, sans-serif;
@@ -1248,12 +1244,13 @@ label:disabled {
   font-weight: 500;
   text-transform: uppercase;
   width: 180px;
-  margin-top: 7px;
-  margin-bottom: 19px;
+  margin-top: 10px;
+  margin-bottom: 22px;
   margin-right: 18px;
   padding: 8px 22px 8px 13px;
   border: 2px solid #d7dcde;
   border-radius: 3px;
+  outline: none;
 }
 .login-form input[type="text"]:hover {
   border: 2px solid #a2a9ac;
@@ -1273,6 +1270,7 @@ textarea {
   padding: 10px 15px;
   border: 2px solid #d7dcde;
   border-radius: 3px;
+  outline: none;
 }
 textarea:hover {
   border: 2px solid #a2a9ac;
@@ -1305,4 +1303,5 @@ textarea:focus {
 }
 .login-form .btn-user:active {
   background-color: #b63538;
+  box-shadow: inset 0 3px 0 0 #9b2d30;
 }

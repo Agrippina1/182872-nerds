@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500&subset=latin,cyrillic">
-    <link rel="stylesheet" href="css/normalise.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -32,7 +32,7 @@
           </ul>
         </nav>
         <div class="user-block">
-          <a class="basket "href="#">корзина</a>
+          <a class="basket active"href="#">корзина</a>
         </div>
       </div>
     </header>
@@ -137,14 +137,34 @@
         </a>
       </div>
     </div>
-    <div class="map">
+    <div class="map modal-content-map">
       <img src="img/map.gif" width="1199" height="416" alt="карта">
+      <!--<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1998.5954928739407!2d30.323261138693184!3d59.9388541048689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1463161035422" width="1199" height="416" frameborder="0" style="border:0" allowfullscreen></iframe>-->
       <div class="contact">
         <h3>nёrds design studio</h3>
         <span>191186, Санкт-Петербург,<br>
         ул. Б. Конюшенная, д. 19/8<br>
-        <a class="room" href="#">тел. +7 (812)275-75-75</a></span><br>
+        <a class="room js-open-map" href="#">тел. +7 (812)275-75-75</a></span><br>
         <a class="write" href="#">напишите нам</a>
+      </div>
+      <div class="modal-content">
+        <button class="modal-content-close" type="button" title="Закрыть">
+        Закрыть</button>
+        <form class="login-form" action="form.php" metod="post">
+          <div class="name-user">
+            <label for="name-field">Ваше имя:</label>
+            <input class="name-please" type="text" name="forename" placeholder="представьтесь, пожалуйста" required>
+          </div>
+          <div class="email-user">
+            <label for="email-field">Ваш e-mail:</label>
+            <input class="email-please" type="text" name="email" placeholder="для отправки ответа" required>
+          </div>
+          <div class="message-user">
+            <label for="message-field">Текст письма:</label>
+            <textarea name="message" placeholder="в свободной форме" rows="5" required></textarea>
+          </div>
+          <button class="btn-user" type="submit">Отправить</button>
+        </form>
       </div>
     </div>
     <footer class="main-footer">
@@ -158,25 +178,7 @@
         <p>Скидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
-    <div class="modal-content">
-      <button class="modal-content-close" type="button" title="Закрыть">
-      Закрыть</button>
-      <form class="login-form" action="form.php" metod="post">
-        <div class="name-user">
-          <label for="name-field">Ваше имя:</label><br>
-          <input class="name-please" type="text" name="forename" placeholder="представьтесь, пожалуйста" required>
-        </div>
-        <div class="email-user">
-          <label for="email-field">Ваш e-mail:</label><br>
-          <input class="email-please" type="text" name="email" placeholder="для отправки ответа" required>
-        </div>
-        <div class="message-user">
-          <label for="message-field">Текст письма:</label><br>
-          <textarea name="message" placeholder="в свободной форме" rows="5"></textarea>
-        </div>
-        <button class="btn-user" type="submit">Отправить</button>
-      </form>
-    </div>
-    <script src="scripts.js"></script>
+    <script src="js/popup.js">
+    </script>
   </body>
 </html>
