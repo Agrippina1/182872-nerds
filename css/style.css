@@ -1,5 +1,4 @@
 body {
-  /*min-width: 900px;*/
   font-size: 15px;
   line-height: 22px;
   color: #283136;
@@ -242,10 +241,9 @@ header {
   background-position: -25px -954px;
 }
 .main-slider {
-  padding: 20px 0 80px 0;
+  padding: 20px 0 0 0;
   margin-bottom: 80px;
   background: #eeeeee;
-  height: 232px;
 }
 .slider-container {
   position: relative;
@@ -1108,15 +1106,20 @@ label:disabled {
   position: absolute;
   text-align: center;
   width: 204px;
+  font-size: 12px;
+  line-height: 18px;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
   color: #ffffff;
   text-decoration: none;
+  font-weight: 500;
+  text-transform: uppercase;
   background-color: #fb565a;
   border: none;
   outline: none;
   cursor: pointer;
   border-radius: 5px;
   margin-left: 3px;
-  padding: 8px 0;
+  padding: 10px 0;
 }
 .write:hover {
   background-color: #d6494d;
