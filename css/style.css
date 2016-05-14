@@ -836,6 +836,11 @@ label:disabled {
   height: 10px;
   margin-right: 0;
 }
+.sorying .active {
+  color: #444444;
+  opacity: 1;
+  border-bottom: none;
+}
 .btn-down-up {
   float: right;
   width: 25px;
