@@ -1,4 +1,5 @@
 body {
+  min-width: 900px;
   font-size: 15px;
   line-height: 22px;
   color: #283136;
@@ -8,12 +9,12 @@ body {
 .sprite {
   background-image: url(spritesheet.png);
   background-repeat: no-repeat;
- display: block;
+  display: block;
 }
 .sprite--icon-basket {
- width: 15px;
- height: 15px;
- background-position: -25px -25px;
+  width: 15px;
+  height: 15px;
+  background-position: -25px -25px;
 }
 .sprite--icon-check-off {
   width: 23px;
@@ -90,20 +91,15 @@ body {
   height: 15px;
   background-position: -25px -1019px;
 }
-.sprite-line-red {
-  width: 25px;
-  height: 2px;
-  background-position: -25px -1084px;
-}
 .sprite-nerds-marker {
   width: 231px;
   height: 190px;
-  background-position: -25px -1136px;
+  background-position: -25px -1084px;
 }
 .sprite-small {
   width: 240px;
   height: 30px;
-  background-position: -25px -1376px;
+  background-position: -25px -1324px;
 }
 h2 {
   font-size: 18px;
@@ -346,8 +342,11 @@ header {
   margin-bottom: 55px;
 }
 .main-welcome {
-  background: #eeeeee;
+  float: left;
+  width: 100%;
   min-height: 225px;
+  background: #eeeeee;
+  margin-bottom: 71px;
 }
 .welcome {
   width: 700px;
@@ -908,7 +907,7 @@ label:disabled {
   width: 240px;
   height: 30px;
   background: transparent url("../img/sprite.png") no-repeat;
-  background-position: -25px -1376px;
+  background-position: -25px -1324px;
   opacity: 0.1;
 }
 .gallery-content:hover::before {
@@ -1060,13 +1059,15 @@ label:disabled {
 .map {
   position: relative;
   margin: 0 auto;
-  width: 100%;
+  max-width: 1200px;
+  min-width: 900px;
 }
 .map iframe {
   margin: 0 auto;
   background: url("../img/map.png") no-repeat;
   width: 100%;
   height: 416px;
+  border: 0;
 }
 .contact {
   position: absolute;;
@@ -1137,14 +1138,13 @@ label:disabled {
   width: 231px;
   height: 190px;
   background: transparent url("../img/sprite.png") no-repeat;
-  background-position: -25px -1136px;
+  background-position: -25px -1084px;
 }
 .main-footer {
   clear: both;
   width: 900px;
   min-height: 217px;
   margin: 0 auto;
-  padding: 0 10px;
 }
 .footer-social {
   float: left;
@@ -1205,15 +1205,20 @@ label:disabled {
   margin-bottom: 30px;
 }/*Всплывающая форма*/
 .modal-content {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
   display: none;
   position: absolute;
-  background: #ffffff;
+  width: 630px;
   bottom: 40px;
-  left: 275px;
-  width: 480px;
-  padding: 40px 70px 1px 80px;
+  left: 50%;
   color: #000000;
-  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7)
+  background: #ffffff;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+  margin-left: -325px;
+  padding: 40px 70px 1px 80px;
 }
 .modal-content-show {
   display: block;
